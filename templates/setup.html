@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../static/img/favicon.ico">
+
+    <title>Checkout example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="../static/img/logo.png" width="25%" height="25%" alt="">
+        <h2>SocialTrack Setup</h2>
+        <p class="lead">Welcome to the SocialTrack setup wizard</p>
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-md-12">
+          <h4 class="mb-3">User information</h4>
+          <form class="needs-validation" action="/configure" method="post" novalidate>
+
+            <div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="pw">Password <span class="text-muted">(* )</span></label>
+              <input type="password" class="form-control" id="pw" name="pw" placeholder="***" required>
+              <div class="invalid-feedback">
+                Password required.
+              </div>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Database</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="db" name="db" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="db">Postgres</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="dburl">Database URL</label>
+                <input type="text" class="form-control" id="dburl" name="dburl" value="127.0.0.1" required>
+                <small class="text-muted">URL of your database</small>
+                <div class="invalid-feedback">
+                  Database URL is required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="dbport">Port</label>
+                <input type="text" class="form-control" id="dbport" name="dbport" value="5432" required>
+                <div class="invalid-feedback">
+                  Port is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="dbusername">Username</label>
+                <input type="text" class="form-control" id="dbusername" name="dbusername" placeholder="" required>
+                <div class="invalid-feedback">
+                  Database username required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="dbpw">Password</label>
+                <input type="password" class="form-control" id="dbpw" name="dbpw" placeholder="" required>
+                <div class="invalid-feedback">
+                  Password required
+                </div>
+              </div>
+            </div>
+
+            <hr class="mb-4">
+            <h4 class="mb-3">Caching Database</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="cachedb" name="cachedb" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="cachedburl">Redis</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cachedburl">Database URL</label>
+                <input type="text" class="form-control" id="cachedburl" name="cachedburl" value="127.0.0.1" required>
+                <small class="text-muted">Cache database</small>
+                <div class="invalid-feedback">
+                  Database URL required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cachedbport">Port</label>
+                <input type="text" class="form-control" id="cachedbport" name="cachedbport" value="6379" required>
+                <div class="invalid-feedback">
+                  Port required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cachedbusername">Username</label>
+                <input type="text" class="form-control" id="cachedbusername" name="cachedbusername" placeholder="">
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cachedbpw">Password</label>
+                <input type="password" class="form-control" id="cachedbpw" name="cachedbpw" placeholder="">
+
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">SocialTrack v1.0</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Documentation</a></li>
+          <li class="list-inline-item"><a href="#">License</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../static/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../static/assets/js/vendor/popper.min.js"></script>
+    <script src="../static/dist/js/bootstrap.min.js"></script>
+    <script src="../static/assets/js/vendor/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>

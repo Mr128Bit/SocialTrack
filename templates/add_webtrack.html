@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/img/favicon.ico">
+
+    <title>SocialTrack</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/offcanvas.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Social<stong>Track</stong></a>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Listeners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accounts</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </nav> 
+    <hr>
+
+    <main role="main" class="container">
+      <div class="container">
+        <h1>Website Monitoring</h1>
+        <form>
+          <div class="form-group">
+            <label for="domain">Domain</label>
+            <input type="text" class="form-control" id="domain" name="domain" placeholder="Enter domain">
+          </div>
+          <hr>
+          <div class="form-group">
+            <label>Status</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="status" id="active" value="active" checked>
+              <label class="form-check-label" for="active">Active</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="status" id="inactive" value="inactive">
+              <label class="form-check-label" for="inactive">Inactive</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="archive" name="archive">
+            <label class="form-check-label" for="archive">Archive changes</label>
+          </div>
+          <hr>
+          <div class="form-group">
+            <label>Check Site</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="check-site" id="full-site" value="full-site" checked>
+              <label class="form-check-label" for="full-site">Full Site</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="check-site" id="single-site" value="single-site">
+              <label class="form-check-label" for="single-site">Single Site</label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-group">
+            <label for="interval">Interval in minutes</label>
+            <input type="number" class="form-control" id="interval" name="interval" value=30>
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+      </div>
+    </main>
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/static/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/static/assets/js/vendor/popper.min.js"></script>
+    <script src="/static/dist/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/vendor/holder.min.js"></script>
+    <script src="/static/offcanvas.js"></script>
+  </body>
+</html>

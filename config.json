@@ -1,0 +1,17 @@
+{
+    "baseURL": "https://127.0.0.1:5000",
+    "database": {
+        "redis": {
+            "url": "127.0.0.1",
+            "port": "6379",
+            "username": "",
+            "password": ""
+        },
+        "postgres": {
+            "url": "127.0.0.1",
+            "port": "5433",
+            "username": "testuser",
+            "password": "n0passw0rd"
+        }
+    }
+}
